@@ -1,5 +1,131 @@
+/* Toàn trang */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #ece9e6, #ffffff);
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+/* Nhập room và nút join */
+.top-controls {
+  margin-bottom: 20px;
+}
+
+#roomInput {
+  padding: 10px;
+  width: 200px;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-size: 1rem;
+}
+
+button {
+  padding: 10px 16px;
+  margin: 8px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+button:hover {
+  transform: translateY(-2px);
+}
+
+/* Các loại nút */
+#joinBtn {
+  background: #4caf50;
+  color: white;
+}
+
+#joinBtn:hover {
+  background: #388e3c;
+}
+
+#sendBtn {
+  background: #ff9800;
+  color: white;
+  border-radius: 0 0 12px 0;
+}
+
+#sendBtn:hover {
+  background: #f57c00;
+}
+
+.control-buttons button {
+  background: #2196f3;
+  color: white;
+}
+
+.control-buttons button:hover {
+  background: #1976d2;
+}
+
+.control-buttons button.active {
+  background: #f44336;
+}
+
+/* Video */
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+  margin-top: 20px;
+  justify-items: center;
+}
+
 video {
-  width: 45%;
-  margin: 5px;
-  border: 2px solid black;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 12px;
+  border: 2px solid #333;
+  background: black;
+}
+
+/* Chat */
+.chat-container {
+  margin-top: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f4f4f4;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.chat-box {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+.chat-box div {
+  margin-bottom: 6px;
+  padding: 6px 10px;
+  background: #e0f7fa;
+  border-radius: 8px;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+#chatInput {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 0 0 0 12px;
+  font-size: 1rem;
 }
